@@ -1,0 +1,109 @@
+/* Site-wide */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Header */
+  header {
+      display:flex;
+      justify-content: space-between;
+      padding:15px;
+      background: grey;
+  }
+
+  .logo {
+      font-size:30px;
+      
+  }
+
+  nav {
+      display:flex;
+      align-items:center;
+  }
+
+  nav a {
+      font-size: 20px;
+      color:white;
+      text-decoration: none;
+      margin: 0 15px 0 15px;
+  }
+
+  .hamburger {
+      display:none;
+  }
+  /* Main */
+  main {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: center;
+
+  }
+
+  .card {
+      font-size: 20px;
+      height: auto;
+      padding-bottom:200px;
+      width:20%;
+      margin: 15px 25px 25px 15px;
+      background:#EEEEEE
+  }
+
+  .card h3 {
+    background:#CCCCFF;
+    font-size:28px;
+    font-weight: bolder;
+    padding: .8rem;
+  }
+
+  .card p {
+      font-weight: bold;
+      padding:10px;
+      font-size:22px;
+  }
+
+  /* Footer */
+  footer {
+      position:fixed;
+      bottom:0;
+      width:100vw;
+      text-align: center;
+      padding:10px;
+      background-color: #AAAAAB;
+      height:40px;
+  }
+  /* Media Queries */
+@media screen and (max-width: 768px) {
+    nav {
+        display:none;
+    }
+
+    .hamburger {
+        display:flex;
+        align-items:center;
+        color:white;
+    }
+
+    .card {
+        flex-basis:100%;
+        height:auto;
+        margin:20px;
+        padding-bottom:0px;
+    }
+
+    .card h3 {
+        font-size: 2em;
+    }
+
+    .card p {
+        font-size: 1.2em;
+    }
+}
+

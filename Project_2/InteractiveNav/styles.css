@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+body {
+    font-family: 'Potta One', Arial, Helvetica, sans-serif;
+    display: flex;
+    margin: 0;
+}
+
+.main {
+    padding: 10px;
+    margin-left: 3rem;
+}
+.navbar {
+    background-color: rgb(51, 50, 58);
+    height: 100vh;
+    flex: 1 0 5rem;
+
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width:5rem;
+    transition: width ease 200ms;
+}
+
+svg {
+    width: 40px;
+    transition: ease 500ms;
+}
+
+.link-text {
+    display: none;
+    text-decoration:none;
+    color:white;
+}
+
+.nav-link {
+    margin-bottom: 3rem;
+    text-decoration: none;
+}
+
+#logout {
+    margin-top: auto;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        flex-direction:column-reverse;
+    }
+    .navbar {
+        width: 100vw;
+        height:5rem;
+        position:fixed;
+        bottom:0;
+    }
+    .nav-container {
+        margin:0 auto;
+        flex-direction:row;
+        justify-content:space-around;
+    }
+
+    .nav-link {
+        margin-bottom:0;
+        padding:10px;
+    }
+
+    #logout {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width:600px){
+.nav-container:hover {
+    width: 16rem;
+}
+
+.nav-container:hover .link-text {
+    display:inline;
+    margin-left:1rem;
+}
+    .nav-link {
+        display:flex;
+        align-items:center;
+    }
+
+    .nav-container:hover .nav-link {
+        margin-left: 1rem;
+    }
+
+    .nav-container:hover{
+        align-items:flex-start;
+    }
+
+    .link-text:hover {
+        color:#FF5555;
+    }
+
+    .nav-link:hover svg {
+        fill: #FF5555;
+    }
+
+    .nav-link:hover .link-text {
+        color:#FF5555;
+    }
+
+    .nav-link:last-child{
+        margin-top:auto;
+    }
+
+    .nav-link:hover svg {
+        transform: rotate(360deg);
+    }
+}

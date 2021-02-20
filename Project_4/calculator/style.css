@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+
+  html {
+    font-size: 24px;
+    font-family: 'Unica One', cursive;
+  }
+  
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0;
+  }
+  
+  #app h1 {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 8px;
+  }
+
+/* Basics styles for calculator, display, and buttons */
+.calculator {
+      background: #757575;
+      width: 480px;
+      border: 3px solid rgb(201, 52, 52);
+      border-radius: 15px;
+  }
+
+.display {
+    background: #e6e6e6;
+    height: 150px;
+    margin:20px;
+    border:1px solid rgb(201, 52, 52);
+    border-radius:10px;
+    padding:15px;
+    display:grid;
+    grid-template-rows: repeat(4, 25%);
+    font-size:30px;
+    text-decoration: bold;
+}
+
+.next-value{
+    text-align: right;
+}
+
+.controls {
+    display:grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+    padding:10px;
+}
+
+button { 
+    font-size:4vh;
+    margin:10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.527);
+}
+
+.next-operation{
+    color:tomato;
+}
+
+.held-label {
+    text-decoration: underline;
+}
+/*  Grids for memory controls */
+.memory{
+    grid-column:1;
+    display:grid;
+    grid-template-columns: 2 auto;
+}
+
+.clear-all {
+    grid-column:1;
+}
+
+.clear-entry{
+    grid-column:2;
+}
+
+/* Grids for operations */
+.operations {
+    grid-column:2;
+    grid-row: 1 / 3;
+    display:grid;
+}
+
+
+
+/* Grids for digits */
+.digits {
+    grid-column: 1;
+    grid-row: 2;
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows:repeat(4, auto)
+}
+.digits button:last-child{
+    grid-column: 2 / 4;
+}
+
+/* Styles for buttons */
+.operations button {
+    display:block;
+    background:#faa02a;
+}
+.operations button:last-child {
+    background:tomato;
+}
+
+.memory button {
+    padding: 30px 10px;
+    font-size:2vh;
+    background:tomato;
+}
+
+.digits button {
+    padding: 25px;
+    background:rgb(255, 255, 255);
+}
+
+

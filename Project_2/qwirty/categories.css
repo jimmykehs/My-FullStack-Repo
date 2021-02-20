@@ -1,0 +1,23 @@
+.categories {
+    display:flex;
+    flex-direction: column;
+    flex: 0 0 256px;
+    align-content: center;
+}
+
+.categories a {
+    text-decoration: none;
+    font-family: dosis;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    background: #44b;
+    color:white;
+    padding: 20px;
+    margin: 0px 20px 25px 20px;
+    font-size: 20px;
+}
+
+.categories a:hover {
+    box-shadow: 0 2px 5px -2px black;
+}
