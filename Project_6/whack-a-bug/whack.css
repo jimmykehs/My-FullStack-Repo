@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: Roboto, arial;
+}
+
+#user-info {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(240, 240, 240);
+    border-bottom: 3px solid rgb(184, 184, 184);
+    width:100%;
+    height:10vh;
+    text-align: center;
+    font-size:36px;
+}
+
+#app {
+    height:90vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items:center;
+    background-image: url(/img/error.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #282C34;
+    padding-top: 10%;
+    
+}
+
+.home {
+    text-decoration: none;
+    color:black;
+    border: 3px solid black;
+    padding:10px;
+    border-radius:15px;
+}
+
+.home:hover{
+    background-color:tomato;
+}
+.game-settings-container{
+    position:absolute;
+    margin-top:10vh;
+    height:90vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.game-settings{
+    color:black;
+    position:absolute;
+    background:rgb(50, 122, 218);
+    height:500px;
+    width:500px;
+    border-radius: 10%;
+    padding:30px;
+    border: 3px solid white;
+}
+.game-settings form{
+    font-size: 24px;
+    margin-top:20px;
+   
+    
+}
+
+.game-settings input[type=radio]{
+    opacity: 0;
+    position: fixed;
+    width:0;
+}
+.game-settings label {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 4px;
+}
+.game-settings input[type="radio"]:checked + label  {
+    background-color:#bfb;
+    border-color: #4c4;
+}
+.game-settings label:hover {
+    background-color: rgb(236, 100, 100);
+  }
+
+  .game-settings input[type="submit"] {
+      position: absolute;
+      width: 100px;
+      height:50px;
+      margin-top:10px;
+      bottom: 20px;
+      left: 41%;
+      background-color: #ddd;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: 2px solid #444;
+      border-radius: 4px;
+  }
+
+  .game-settings input[type="submit"]:hover {
+    background-color: #dfd;
+  }
+
+  .start-game{
+      display:none;
+  }
+
+  .how-to {
+      font-size: 20px;
+      margin-top: 10px;
+  }
+
+  .select-difficulty {
+      font-size:20px;
+      margin-top:30px;
+  }
+
+  .difficulty-info{
+      font-size:18px;
+      margin-top:10px;
+  }
+  .endgame-panel-container{
+    position:absolute;
+    height:100vh;
+    width:100vw;
+    justify-content: center;
+    align-items:center;
+    display:none;
+  }
+  .endgame-panel{
+    color:black;
+    position:absolute;
+    background:rgb(50, 122, 218);
+    height:300px;
+    width:300px;
+    border-radius: 10%;
+    padding:30px;
+    border: 3px solid white;
+  }
+  .finished-score{
+      font-size:18px;
+      margin-top:10px;
+      text-align: center;
+  }
+
+  .endgame-panel h1{
+      text-align:center;
+  }
+
+  .play-again{
+    position: absolute;
+    width: 150px;
+    height:100px;
+    margin-top:10px;
+    background-color: #ddd;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    top: 50%;
+    left:25%;
+}
+
+.play-again:hover {
+    background-color: #dfd;
+  }
+.hole {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:150px;
+    width:150px;
+    background:whitesmoke;
+    border-radius: 20px;
+    border: 5px solid black;
+    margin-bottom:10%;
+}
+
+.bug {
+    height:100%;
+    width:100%;
+    background-image: url('../img/Bug.png');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.civilian {
+    
+    height:100%;
+    width:100%;
+    background-image: url('../img/Patch.png');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    
+}
+
+#app {
+    cursor: url('../img/hammer.png'), auto;
+  }

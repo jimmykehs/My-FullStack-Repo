@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="whack.css">
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+    </script>
+    
+    <title>Whack-a-bug</title>
+</head>
+<body>
+    <div class='game-settings-container'>
+        <div class='game-settings'>
+            <h1>Welcome to Wack-a-Bug!</h1>
+            <p class='how-to'>Oh no! You tried to write a hello world program and you screwed up! There are bugs everywhere! Click on these pesky bugs to debug them, make sure to not click on any patches though! We need this program to work!</p>
+            <p class='select-difficulty'>Select a difficulty to get started!</p>
+            <form class='settings'>
+                <input type="radio" id='easy' value="Easy" name="difficulty">
+                <label for="easy">Easy</label>
+                <input type="radio" id='medium' value="Medium" name="difficulty">
+                <label for="medium">Medium</label>
+                <input type="radio" id='hard' value="Hard" name="difficulty">
+                <label for="hard">Hard</label>
+                <input type="radio" id='good-luck' value="Good Luck" name="difficulty">
+                <label for="good-luck">Good Luck</label>
+                <p class='difficulty-info'>Easy, Medium, and Hard all have consistent bug spawn times, whereas 'good luck' difficulty starts slow and speeds up throughout the game</p>
+                <input type="submit" class='start-game' value="Lets Go!">
+            </form>
+        </div>
+    </div>
+    <div class='endgame-panel-container'>
+        <div class='endgame-panel'>
+            <h1>Game Over!</h1>
+            <p class='finished-score'></p>
+            <button class='play-again'>Play Again?</button>
+
+        </div>
+    </div>
+        <div id='user-info'>
+            <a href="/index.html" class='home'>Home</a>
+            <p class='score'>Score: 0</p>
+            <p class='timer'>Time: 5</p>
+        </div>
+        <div id='app'>
+            <div class='hole'></div>
+            <div class='hole'></div>
+            <div class='hole'></div>
+            <div class='hole'></div>
+            <div class='hole'></div>
+            <div class='hole'></div>
+            </div>    
+        </div>
+    <script src='whack.js'></script>
+</body>
+</html>
